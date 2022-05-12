@@ -5,6 +5,10 @@
 		//type checking
 		"noImplicitAny": true,
 		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"strictFunctionTypes": true,
+		"noImplicitThis": true,
+		"strictBindCallApply": true,
 },
 	"include": [
 	"src/**/*",
