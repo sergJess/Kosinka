@@ -1,0 +1,33 @@
+{
+  "name": "kosinka",
+  "version": "1.0.0",
+  "description": "kosinka",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "webpack  serve --mode=development",
+    "build": "webpack  --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergJess/Kosinka.git"
+  },
+  "keywords": [
+    "koisnka",
+    "game"
+  ],
+  "author": "Sergey Sudakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergJess/Kosinka/issues"
+  },
+  "homepage": "https://github.com/sergJess/Kosinka#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.3.0",
+    "typescript": "^4.6.4",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  }
+}
