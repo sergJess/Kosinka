@@ -1,9 +1,9 @@
-interface nodeParametrs {
+export interface nodeParametrs {
 	classList?: Array<string>
 	id? :string;
 	text?: string;
 }
-export default class NodeCreator {
+export class NodeCreator {
 	private element: HTMLElement;
 	private parent: HTMLElement;
 	private nodeParams: nodeParametrs;
@@ -40,4 +40,13 @@ addText(): void{
 	}
 }
 
+getElement(): HTMLElement {
+	return this.element;
+}
+removeElement(): void {
+	this.element.remove();
+}
+removeElementContent(): void {
+	this.element.innerHTML = '';
+}
 }
