@@ -1,12 +1,48 @@
+.start-page{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 1.4rem;
+	min-height: 100vh;
+}
+
+.start-page-title{
+	font-size: 4.8rem;
+	line-height: 5.1rem;
+	color: #d7c600;
+}
+
 .start-page-button{
 	padding: 1rem 3.4rem;
 	background-color: #6613af;
 	font-size: 2.8rem;
 	line-height: 3.1rem;
+	letter-spacing: 0.2rem;
 	color: #fff;
-	border-radius: 4px;
+	border-radius: 6px;
 	cursor: pointer;
 	transition: color 0.4s, background-color 0.6s;
+	animation-name: start-button;
+	animation-duration: 0.8s;
+	animation-delay: 1s;
+}
+
+@keyframes start-button {
+	0% {
+		transform: translateY(0);
+	}
+
+50%{
+	transform: translateY(-14px);
+}
+
+
+75%{
+	transform: translateY(14px);
+}
+100%{
+	transform: translateY(0);
+}
 }
 
 .start-page-button:hover{
